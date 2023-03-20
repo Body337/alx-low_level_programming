@@ -10,6 +10,7 @@ int main(void)
 {
 	char alpha_bet = 'a';
 	char last_bet = 'z';
+
 	for (; alpha_bet <= last_bet; alpha_bet++)
 	{
 		putchar(alpha_bet);
