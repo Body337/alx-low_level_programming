@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char frits = 'a';
+	char frist = 'a';
 	char last = 'z';
 	
 	for (; frist <= last; frist++)
