@@ -11,7 +11,7 @@ int main(void)
 
 	a = 10;
 
-	while (a < 100)
+	while (a < 1000)
 	{
 		b = a % 10;
 		c = (a / 10) % 10;
