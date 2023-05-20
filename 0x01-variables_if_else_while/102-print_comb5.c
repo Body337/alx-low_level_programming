@@ -1,4 +1,4 @@
-#!/bin/bash
+#includ<stdio.h>
 /*
  * main - main block
  * Descreption : prints all numbers from 1 to 99 in 2 combination
