@@ -4,7 +4,7 @@
  * print_sign - prints every sign
  * @n: an integer to be cheacked
  *
- * Return : 1 if n is greater than zero or 0 if its equal to zero  or -1 if its less than zero
+ * Return: 1 if n is greater than zero or 0 if zero else -1
  */
 int print_sign(int n)
 {
