@@ -3,7 +3,7 @@
 /**
  * _abs - prints the absolute value of a integar
  * @n: integer to be tested
- * return : absolute n
+ * Return : absolute n
  */
 int _abs(int n)
 {
