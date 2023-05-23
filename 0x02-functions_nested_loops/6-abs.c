@@ -5,7 +5,7 @@
  * @n: integer to be tested
  * return : absolute n
  */
-int _abs(int n);
+int _abs(int n)
 {
 	if (n < 0)
 	{
