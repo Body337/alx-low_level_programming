@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * jaske_bauer - prints 00:00 to 23:59
+ * jack_bauer - prints 00:00 to 23:59
  *
  * Return: 0 on success
  */
-void jask_bauer(void)
+void jack_bauer(void)
 {
 	int x, y;
 
@@ -21,5 +21,4 @@ void jask_bauer(void)
 			_putchar('\n');
 		}	
 	}
-	return (0);
 }
