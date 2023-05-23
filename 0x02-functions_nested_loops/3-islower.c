@@ -3,9 +3,9 @@
 
 /**
  * _islower - return 1 if the letter is lowercase
- * @c is a char to be tested
+ * @c: is a char to be tested
  *
- * Return: 0
+ * Return: 1 for lowercase 0 otherwise
  */
 
 int _islower(int c)
