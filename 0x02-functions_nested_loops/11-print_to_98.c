@@ -87,5 +87,5 @@ void print_to_98(int n)
 	}
 	_putchar(9 + '0');
 	_putchar(8 + '0');
-	_putcahr('\n');
+	_putchar('\n');
 }
