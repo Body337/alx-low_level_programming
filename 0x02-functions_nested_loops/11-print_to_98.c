@@ -6,75 +6,86 @@
  */
 void print_to_98(int n)
 {
-	if (n > 98)
+	int hund, tens, digit;
+
+	if (n < 0)
 	{
-		for (; n > 98; n--)
-		{
-			if (n >= 100)
-			{
-			_putchar(((n) / 100) + '0');
-			_putchar((((n) / 10) % 10) + '0');
-			_putchar(((n) % 10) + '0');
-			_putchar(',');
-			_putchar(' ');
-			}
-			else if (n < 100 && n > 9)
-			{
-			_putchar(((n) / 10) + '0');
-			_putchar(((n) % 10) + '0');
-			_putchar(',');
-			_putchar(' ');
-			}
-			else
-			{
-				_putchar(((n) % 10) + '0');
-				_putchar(',');
-				_putchar(' ');
-			}
-		}
+		hund = (n * -1) / 100;
+		digit = (n * -1) % 10;
+		tens = ((n * -1) / 10) % 10;
 	}
-	else if (n < 98)
+	else if (n > 0)
+	{
+		hund = n / 100;
+		digit = n % 10;
+		tens = (n / 10) % 10;
+	}
+
+	if (n < 0)
 	{
 		for (; n < 98; n++)
 		{
-			if (n < 0)
+			if (n <= -100);
 			{
-				n = n * -1;
-
-				if (n < 100)
-				{
-					_putchar('-');
-					_putchar(((n) / 100) + '0');
-					_putchar((((n) / 10) % 10) + '0');
-					_putchar(((n) % 10) + '0');
-					_putchar(',');
-					_putchar(' ');
-				}
-				else if (n > 100)
-				{
-					_putchar('-');
-					_putchar(((n) / 10) + '0');
-					_putchar(((n) % 10) + '0');
-					_putchar(',');
-					_putchar(' ');
-				}
-			}
-			else if (n < 98 && n > 10)
-			{
-				_putchar(((n) / 10) + '0');
-				_putchar(((n) % 10) + '0');
+				_putchar('-');
+				_putchar(hunds + '0');
+				_putchar(tens + '0');
+				_putchar(digit + '0');
 				_putchar(',');
 				_putchar(' ');
 			}
-			else if (n > 0 && n < 10)
+			else if (n > -100)
 			{
-				_putchar(((n) % 10) + '0');
+				_putchar('-');
+				_putchar(tens + '0');
+				_putchar(digit + '0');
 				_putchar(',');
 				_putchar(' ');
 			}
 		}
 	}
-	_putchar((n / 10) + '0');
-	_putchar((n % 10) + '0');
-	_putchar('\n');
+	if (n >=0 && n < 98)
+	{
+		for (; n < 98; n++)
+		{
+			if (n < 100 && n > 9);
+			{
+				_putchar(tens + '0');
+				_putchar(digit + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
+			else if (n < 10 )
+			{
+				_putchar(digit + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+	}
+	else if (n > 98)
+	{
+		
+		for (; n > 98; n--)
+		{
+			if (n >= 100);
+			{
+				_putchar(hunds + '0');
+				_putchar(tens + '0');
+				_putchar(digit + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
+			else if (n < 100)
+			{
+				_putchar(tens + '0');
+				_putchar(digit + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+	}
+	_putchar(9 + '0');
+	_putchar(8 + '0');
+	_putcahr('\n');
 }
