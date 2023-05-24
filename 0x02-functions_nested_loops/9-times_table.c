@@ -18,7 +18,6 @@ void times_table(void)
 			if (column == 0)
 			{
 				_putchar('0');
-				_putchar(',');
 			}
 			else
 			{
@@ -27,17 +26,17 @@ void times_table(void)
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(num + '0');
-					_putchar(',');
-					continue;
 				}
 				else if (num >= 10)
 				{
 					_putchar(' ');
 					_putchar((num / 10) + '0');
 					_putchar((num % 10) + '0');
-					_putchar(',');
-					continue;
 				}
+			}
+			if(column < 9)
+			{
+				_putchar(',');
 			}
 		}
 		_putchar('\n');
