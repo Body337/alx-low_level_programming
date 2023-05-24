@@ -13,7 +13,7 @@ void times_table(void)
 	{
 		for (column = 0; column <= 8; column++)
 		{
-			num = row * (column + 1);
+			num = row * column;
 
 			if (column == 0)
 			{
@@ -22,7 +22,7 @@ void times_table(void)
 			}
 			else
 			{
-				if (num < 10 && num != 0)
+				if (num < 10 && num == 0)
 				{
 					_putchar(' ');
 					_putchar(' ');
