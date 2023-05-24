@@ -34,7 +34,7 @@ void times_table(void)
 					_putchar((num % 10) + '0');
 				}
 			}
-			if(column < 9)
+			if (column < 9)
 			{
 				_putchar(',');
 			}
