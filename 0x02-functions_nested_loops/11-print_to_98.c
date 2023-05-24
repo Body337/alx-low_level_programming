@@ -6,17 +6,17 @@
  */
 void print_to_98(int n)
 {
-	int hund, tens, digit;
+	int hunds, tens, digit;
 
 	if (n < 0)
 	{
-		hund = (n * -1) / 100;
+		hunds = (n * -1) / 100;
 		digit = (n * -1) % 10;
 		tens = ((n * -1) / 10) % 10;
 	}
 	else if (n > 0)
 	{
-		hund = n / 100;
+		hunds = n / 100;
 		digit = n % 10;
 		tens = (n / 10) % 10;
 	}
@@ -25,7 +25,7 @@ void print_to_98(int n)
 	{
 		for (; n < 98; n++)
 		{
-			if (n <= -100);
+			if (n <= -100)
 			{
 				_putchar('-');
 				_putchar(hunds + '0');
@@ -48,7 +48,7 @@ void print_to_98(int n)
 	{
 		for (; n < 98; n++)
 		{
-			if (n < 100 && n > 9);
+			if (n < 100 && n > 9)
 			{
 				_putchar(tens + '0');
 				_putchar(digit + '0');
@@ -68,7 +68,7 @@ void print_to_98(int n)
 		
 		for (; n > 98; n--)
 		{
-			if (n >= 100);
+			if (n >= 100)
 			{
 				_putchar(hunds + '0');
 				_putchar(tens + '0');
