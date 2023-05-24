@@ -11,30 +11,33 @@ void times_table(void)
 
 	for (row = 0; row <= 9; row++)
 	{
-		for (column = 0; column <= 9; column++)
+		for (column = 0; column <= 8; column++)
 		{
 			num = row * (column + 1);
 
 			if (column == 0)
 			{
 				_putchar('0');
-				_putchar(',');	
-			}
-			if (num < 10 && num != 0)
-			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(num + '0');
 				_putchar(',');
-				continue;
 			}
-			else if (num >= 10)
+			else
 			{
-				_putchar(' ');
-				_putchar((num / 10) + '0');
-				_putchar((num % 10) + '0');
-				_putchar(',');
-				continue;
+				if (num < 10 && num != 0)
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(num + '0');
+					_putchar(',');
+					continue;
+				}
+				else if (num >= 10)
+				{
+					_putchar(' ');
+					_putchar((num / 10) + '0');
+					_putchar((num % 10) + '0');
+					_putchar(',');
+					continue;
+				}
 			}
 		}
 		_putchar('\n');
