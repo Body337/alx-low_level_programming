@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <string.h>
 /**
  * print_rev - prints the string in reverse order
  * @s: a pointer to the string str
@@ -9,7 +10,7 @@
 void print_rev(char *s)
 {
 	int x;
-	char c[x];
+	char str[];
 
 	x = 0;
 
