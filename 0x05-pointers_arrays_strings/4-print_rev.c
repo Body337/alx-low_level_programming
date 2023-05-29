@@ -10,7 +10,7 @@
 void print_rev(char *s)
 {
 	int x;
-	char str[];
+	char c[];
 
 	x = 0;
 
