@@ -10,7 +10,6 @@
 void print_rev(char *s)
 {
 	int x;
-	char c[];
 
 	x = 0;
 
@@ -20,6 +19,8 @@ void print_rev(char *s)
 	}
 
 	x = x - 1;
+
+	char c[x];
 
 	for (; x >= 0; x--)
 	{
