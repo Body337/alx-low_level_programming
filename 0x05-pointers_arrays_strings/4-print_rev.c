@@ -23,7 +23,7 @@ void print_rev(char *s)
 
 		s = s - 1;
 
-		if (c = x)
+		if (c == x)
 		{
 			break;
 		}
