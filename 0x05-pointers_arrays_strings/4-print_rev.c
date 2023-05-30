@@ -27,6 +27,7 @@ void print_rev(char *s)
 		{
 			break;
 		}
+		else
 		_putchar(*(s));
 	}
 	_putchar('\n');
