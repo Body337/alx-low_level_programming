@@ -9,24 +9,20 @@
  */
 void print_rev(char *s)
 {
-	int x, c;
+	int x;
 
 	for (x = 0; *s != '\0'; s++)
 	{
 		x++;
 	}
 
-	c = 0;
+	s--;
 
-	while (c <= x)
+	while (*s != '\0')
 	{
-		if ((*s - c) == '\0')
-		{
-			continue;
-		}
-		else
-		_putchar(*(s - c));
-		c++;
+		s = s - 1;
+
+		_putchar(*(s + 0));
 	}
 	_putchar('\n');
 }
