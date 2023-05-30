@@ -11,9 +11,9 @@ void print_rev(char *s)
 {
 	int x;
 
-	char c[] = *s;
+	char c[] = s;
 
-	for (x = 0; *s != '\0'; *s++)
+	for (x = 0; *s != '\0'; s++)
 	{
 		x++;
 	}
