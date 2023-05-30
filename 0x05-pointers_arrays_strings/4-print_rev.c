@@ -9,16 +9,19 @@
  */
 void print_rev(char *s)
 {
-	int x;
+	int x, c;
 
 	for (x = 0; *s != '\0'; s++)
 	{
 		x++;
 	}
 
-	for (; *s != '\0'; s--)
+	x = x - 1;
+	c = 0;
+
+	for (; c <= x; c++)
 	{
-		_putchar(*s);
+		_putchar(*(s - c));
 	}
 
 	_putchar('\n');
