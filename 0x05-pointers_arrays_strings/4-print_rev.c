@@ -24,6 +24,7 @@ void print_rev(char *s)
 		{
 			continue;
 		}
+		else
 		_putchar(*(s - c));
 		c++;
 	}
