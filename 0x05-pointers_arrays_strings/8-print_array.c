@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * print_array - prints an array
- * @*a; a pointer to the array
+ * @a: a pointer to the array
  * @n: the size of the array
  *
  * Return: 0 on success
@@ -21,5 +21,6 @@ void print_array(int *a, int n)
 			printf(", ");
 		}
 	}
-	_putchar('\n');
+
+	printf("\n");
 }
