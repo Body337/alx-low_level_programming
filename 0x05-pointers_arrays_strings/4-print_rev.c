@@ -20,6 +20,10 @@ void print_rev(char *s)
 
 	while (c <= x)
 	{
+		if ((*s - c) == '\0')
+		{
+			break;
+		}
 		_putchar(*(s - c));
 		c++;
 	}
