@@ -11,22 +11,19 @@ void print_rev(char *s)
 {
 	int x;
 
-	x = 0;
+	char c[] = *s;
 
-	for (; *s != '\0'; s++)
+	for (x = 0; *s != '\0'; *s++)
 	{
 		x++;
 	}
 
 	x = x - 1;
 
-	char c[x];
-
 	for (; x >= 0; x--)
 	{
-		c[x] = *s;
 		_putchar(c[x]);
-		s++;
 	}
+
 	_putchar('\n');
 }
