@@ -17,18 +17,16 @@ void print_rev(char *s)
 	}
 	c = 0;
 
-	while (*s != '\0')
+	while (c < x)
 	{
+		s--;
 		c++;
 
-		s = s - 1;
-
-		if (c == x)
+		if (*s != '\0')
 		{
-			break;
+			_putchar(*(s));
 		}
-		else
-		_putchar(*(s));
+
 	}
 	_putchar('\n');
 }
