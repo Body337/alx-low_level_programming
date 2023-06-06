@@ -32,5 +32,6 @@ char *_strcat(char *dest, char *src)
 		y++;
 		i++;
 	}
+	dest[y] = '\0';
 	return (dest);
 }
