@@ -4,7 +4,7 @@
  * @s: a pointer to a char array
  * Return: nothing
  */
-void _puts_recurstion(char *s)
+void _puts_recursion(char *s)
 {
 	_putchar(*s);
 
