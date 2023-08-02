@@ -20,7 +20,7 @@ int prime(int n, int i)
 {
 	if (n <= 2)
 	{
-		return (n == 2) ? true : false;
+		return (n == 2) ? 1 : 0;
 	}
 	if (n % i == 0)
 	{
