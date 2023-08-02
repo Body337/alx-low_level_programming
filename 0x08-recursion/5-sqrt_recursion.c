@@ -12,7 +12,7 @@ int _sqrt_recursion(int n)
 /**
  * sqrtn - gives the square root of a number
  * @n: number to get its root
- * @i: starting number 
+ * @i: starting number
  *
  * Return: the root
  */
