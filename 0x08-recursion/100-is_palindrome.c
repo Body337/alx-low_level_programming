@@ -27,9 +27,8 @@ int is_palindrome(char *s)
 int palindrome(char *s)
 {
 	int l = len(s) - 1;
-	int z = l/2;
 
-	if ((*s == s[l]) && (*(s + z) == s[z]))
+	if (*s == s[l])
 	{
 		s++;
 		l--;
