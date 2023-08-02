@@ -7,10 +7,12 @@
 void _puts_recurstion(char *s)
 {
 	_putchar(*s);
-	*s--;
-	if (*s == '/0')
+
+	s--;
+
+	if (*s == "/0")
 	{
-		exit;
+		exit (0);
 	}
 	else
 		_puts_recursion(*s);
