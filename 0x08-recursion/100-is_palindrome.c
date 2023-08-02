@@ -28,16 +28,23 @@ int palindrome(char *s)
 {
 	int l = len(s) - 1;
 
-	if (*s == s[l])
+	if (l % 2 != 0)
 	{
-		s++;
-		l--;
+		if (*s == s[l] && *(s + (l / 2) - 1) == s[l - l / 2])
+		{
+			return (1);
+		}
+		else
+			return (0);
 	}
 	else
 	{
+		if (*s == s[l])
+		{
+			return (1);
+		}
 		return (0);
 	}
-	return (1);
 }
 /**
  * len - calculate the len of the string
