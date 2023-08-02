@@ -16,6 +16,6 @@ int factorial(int n)
 	{
 		return (-1);
 	}
-	sum = sum * (factorial(n-1));
+	sum = sum * (factorial(n - 1));
 	return (sum);
 }
