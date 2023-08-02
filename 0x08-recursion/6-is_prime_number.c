@@ -8,11 +8,12 @@ int prime(int n, int i);
  */
 int is_prime_number(int n)
 {
-	return prime(n, 2);
+	return (prime(n, 2));
 }
 /**
  * prime - detrmine wether number is prime or not
  * @i: starting number
+ * @n: a number to be tested
  *
  * Return: 0 if not prime 1 if prime
  */
@@ -20,7 +21,7 @@ int prime(int n, int i)
 {
 	if (n <= 2)
 	{
-		return (n == 2) ? 1 : 0;
+		return ((n == 2) ? 1 : 0);
 	}
 	if (n % i == 0)
 	{
