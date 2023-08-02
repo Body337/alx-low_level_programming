@@ -4,7 +4,7 @@
  * @n: an integer to be tested
  * Return: square root of n or -1 if not
  */
-int sqrtn(int n, i);
+int sqrtn(int n, int i);
 int _sqrt_recursion(int n)
 {
 	return (sqrtn(n, 1));
