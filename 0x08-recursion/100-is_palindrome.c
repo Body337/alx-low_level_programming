@@ -27,8 +27,8 @@ int is_palindrome(char *s)
 int palindrome(char *s)
 {
 	int l = len(s) - 1;
-	
-	if (*s == s[l])
+
+	if ((*s == s[l]) && (*(s + (l / 2)) == s[(l / 2)]))
 	{
 		s++;
 		l--;
@@ -45,9 +45,9 @@ int palindrome(char *s)
  *
  * Return: the len of the string
  */
-int len (char *s)
+int len(char *s)
 {
-	if(*s == '\0')
+	if (*s == '\0')
 	{
 		return (0);
 	}
