@@ -27,10 +27,11 @@ int is_palindrome(char *s)
 int palindrome(char *s)
 {
 	int l = len(s) - 1;
+	int z = l / 2;
 
-	if ((l + 1) % 2 != 0)
+	if ((l + 1) % 2 == 0)
 	{
-		if (*s == s[l] && *(s + (l / 2) - 1) == s[l - (l / 2)])
+		if (*s == s[l] && *(s + z) == s[l - z)])
 		{
 			return (1);
 		}
