@@ -31,7 +31,7 @@ int palindrome(char *s)
 
 	if ((l + 1) % 2 == 0)
 	{
-		if (*s == s[l] && *(s + z) == s[l - z)])
+		if (*s == s[l] && *(s + z) == s[l - z])
 		{
 			return (1);
 		}
