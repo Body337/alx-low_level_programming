@@ -8,32 +8,29 @@
  */
 int _atoi(char *s)
 {
-	char sign = '+';
+	int sign = 1;
 	int nb = 0;
 
 	for (; *s != '\0'; s++)
 	{
-		for (; *s != '\0'; s++)
+		if (*s == ' ' || *s == '+' || *s == '-')
 		{
-			if (*s == ' ' || *s == '+' || *s == '-')
+			if (*s == '+' && sign == -1)
 			{
-				if (*s == '+' && sign == '-')
-				{
-					sign = '-';
-				}
-				else if (*s == '-' && sign == '-')
-				{
-					sign = '+';
-				}
-				else if (*s == '-' && sign == '+')
-				{
-					sign = '-';
-				}
+				sign = -1;
+			}
+			else if (*s == '-' && sign == -1)
+			{
+				sign = 1;
+			}
+			else if (*s == '-' && sign == 1)
+			{
+				sign = -1;
 			}
 		}
-		if (*s >= 48 && *s <= 57)
+		if (*s >= '0' && *s <= '9')
 		{
-			nb = nb + (*s - 48);
+			nb = nb + (*s - '0');
 			if (*(s + 1) < '0' || *(s + 1) > '9')
 			{
 				break;
@@ -41,13 +38,8 @@ int _atoi(char *s)
 			else
 			{
 				nb = nb * 10;
-				continue;
 			}
 		}
 	}
-	if (sign == '-')
-	{
-		nb = (nb * -1);
-	}
-	return (nb);
+	return (nb * sign);
 }
