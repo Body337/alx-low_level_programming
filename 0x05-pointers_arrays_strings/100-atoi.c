@@ -32,9 +32,9 @@ int _atoi(char *s)
 			}
 		}
 
-		if (*s >= '0' && *s <= '9')
+		if (*s >= 48 &i& *s <= 57)
 		{
-			nb = nb + (*s - '0');
+			nb = nb + (*s - 48);
 			if (*(s + 1) < '0' || *(s + 1) > '9')
 			{
 				break;
@@ -46,5 +46,9 @@ int _atoi(char *s)
 			}
 		}
 	}
-	return nb;
+	if (sign == '-')
+	{
+		nb = (nb * -1);
+	}
+	return (nb);
 }
