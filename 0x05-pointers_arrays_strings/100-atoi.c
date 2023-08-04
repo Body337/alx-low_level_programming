@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <limits.h>
 /**
  * _atoi - converts string to an integar
  * @s: a pointer to a string
