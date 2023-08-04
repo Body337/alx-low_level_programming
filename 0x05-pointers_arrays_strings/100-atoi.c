@@ -9,7 +9,8 @@
 int _atoi(char *s)
 {
 	int sign = 1;
-	int nb = 0;
+	INT_MIN nb1 = 0;
+	INT_MAX nb = 0;
 
 	for (; *s != '\0'; s++)
 	{
@@ -41,5 +42,11 @@ int _atoi(char *s)
 			}
 		}
 	}
-	return (nb * sign);
+	if (sign == -1)
+	{
+		nb1 = nb;
+		return (nb1 * sign);
+	}
+	else
+		return (nb * sign);
 }
