@@ -34,13 +34,16 @@ int _atoi(char *s)
 
 		if (*s >= '0' || *s <= '9')
 		{
-			nb = nb + (*s + '0');
+			nb = nb + (*s - '0');
 			if (*(s + 1) < '0' || *(s + 1) > '9')
 			{
 				break;
 			}
 			else
+			{
 				nb = nb * 10;
+				continue;
+			}
 		}
 	}
 	return nb;
