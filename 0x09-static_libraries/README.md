@@ -1,0 +1,1 @@
+its about static libraaries
