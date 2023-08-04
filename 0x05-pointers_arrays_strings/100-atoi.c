@@ -9,23 +9,21 @@
  */
 int _atoi(char *s)
 {
-	int sign = 1; unsigned int nb = 0; signed int nb1 = 0;
+	int sign = 1;
+	unsigned int nb = 0;
+	signed int nb1 = 0;
 
 	for (; *s != '\0'; s++)
 	{
 		if (*s == ' ' || *s == '+' || *s == '-')
 		{
-			if (*s == '+' && sign == -1)
+			if ((*s == '-' && sign = 1) && (*s == '+' && sign == -1))
 			{
 				sign = -1;
 			}
 			else if (*s == '-' && sign == -1)
 			{
 				sign = 1;
-			}
-			else if (*s == '-' && sign == 1)
-			{
-				sign = -1;
 			}
 		}
 		if (*s >= '0' && *s <= '9')
