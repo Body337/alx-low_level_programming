@@ -31,7 +31,6 @@ int _atoi(char *s)
 				}
 			}
 		}
-
 		if (*s >= 48 && *s <= 57)
 		{
 			nb = nb + (*s - 48);
