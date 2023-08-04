@@ -9,10 +9,11 @@
 int _atoi(char *s)
 {
 	char sign = '+';
+	int nb = 0;
 
-	for (, *s != '\0', s++)
+	for (; *s != '\0'; s++)
 	{
-		for (, *s != '\0', s++)
+		for (; *s != '\0'; s++)
 		{
 			if (*s == ' ' || *s == '+' || *s == '-')
 			{
@@ -33,17 +34,13 @@ int _atoi(char *s)
 
 		if (*s >= '0' || *s <= '9')
 		{
-			if (*(s - 1) < '0' || *(s - 1) > '9')
-			{
-				_putchar(sign);
-			}
-			_putchar(*s);
+			nb = nb + (*s + '0');
 			if (*(s + 1) < '0' || *(s + 1) > '9')
 			{
 				break;
 			}
 			else
-				continue;
+				nb = nb * 10;
 		}
 	}
 }
