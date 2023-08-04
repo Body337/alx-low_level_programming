@@ -9,9 +9,7 @@
  */
 int _atoi(char *s)
 {
-	int sign = 1;
-	unsigned int nb = 0;
-	signed int nb1 = 0;
+	int sign = 1; unsigned int nb = 0; signed int nb1 = 0;
 
 	for (; *s != '\0'; s++)
 	{
@@ -48,6 +46,5 @@ int _atoi(char *s)
 		nb1 = nb * sign;
 		return (nb1);
 	}
-	else
-		return (nb * sign);
+	return (nb * sign);
 }
