@@ -43,4 +43,5 @@ int _atoi(char *s)
 				nb = nb * 10;
 		}
 	}
+	return nb;
 }
