@@ -9,17 +9,14 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i;
-	int z = 0;
-
-	for (i = 0; *s1 != '\0' || *s2 != '\0'; i++)
+	for (;*s1 != '\0')
 	{
-		if (*(s1 + i) != *(s2 +i))
+		if (*s1 != *s2)
 		{
-			z = (*s1 - *s2)
+			return (*s1 - *s2)
 		}
-		else
-			continue;
+		s1++;
+		s2++;
 	}
-	return (z);
+	return (0);
 }
