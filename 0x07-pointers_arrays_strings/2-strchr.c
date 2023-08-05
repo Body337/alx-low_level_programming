@@ -5,7 +5,7 @@
  * @s: pointer to a string
  * @c: a char to be searched for
  * 
- * Return : pointer to s or null if c not found
+ * Return: pointer to s or null if c not found
  */
 char *_strchr(char *s, char c)
 {
