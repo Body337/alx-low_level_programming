@@ -7,7 +7,7 @@
  * 
  * Return : pointer to s or null if c not found
  */
-char *_strch(char *s, char c)
+char *_strchr(char *s, char c)
 {
 	for (; *s != '\0'; s++)
 	{
