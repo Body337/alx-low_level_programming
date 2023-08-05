@@ -15,7 +15,7 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		int z = 0;
 
-		while (s[z] != 32)
+		while (s[z] != '\0')
 		{
 			z++;
 			if (s[z] == accept[b])
