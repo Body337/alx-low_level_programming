@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * strchr - search for char c in string s
+ * _strchr - search for char c in string s
  * @s: pointer to a string
  * @c: a char to be searched for
  *
