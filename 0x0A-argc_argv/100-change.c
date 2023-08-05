@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 
 	money = atoi(argv[1]);
 
-	if (money < 0)
+	if (money <= 0)
 	{
 		printf("0\n");
 		return (0);
@@ -44,6 +44,8 @@ int main(int argc, char *argv[])
 		money = money - 2;
 		cents++;
 	}
-	printf("%d\n", cents + 1);
+	if (money == 1)
+		cents++;
+	printf("%d\n", cents);
 	return (0);
 }
