@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 
 		for (k = 0; k < strlen(e); k++)
 		{
-			if (e[k] < '0' && e[k] > '9')
+			if (e[k] < '0' || e[k] > '9')
 			{
 				printf("Error\n");
 				return (1);
