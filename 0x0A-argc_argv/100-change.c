@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int cents = 0;
+	int money, cents = 0;
 
 	if (argc != 2)
 	{
@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	int money = atoi(argv[1]);
+	money = atoi(argv[1]);
 
 	if (money <= 0)
 	{
