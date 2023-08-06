@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_time_table - prints n times table
+ * print_times_table - prints n times table
  * @n: the n time table
  *
  * Return: nothing
@@ -14,7 +14,6 @@ void print_times_table(int n)
 	for (i = 0; i <= n; i++)
 	{
 		_putchar('0');
-		_putchar(',');
 		for (j = 1; j <= n; j++)
 		{
 			_putchar(',');
