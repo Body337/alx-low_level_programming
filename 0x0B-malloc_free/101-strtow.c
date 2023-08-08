@@ -24,7 +24,7 @@ char **strtow(char *str)
 	n = number_of_words(len, str);
 	a = malloc(sizeof(char *) * (n + 1));
 
-	if (n == NULL)
+	if (n == 0)
 	{
 		return (NULL);
 		free(a);
