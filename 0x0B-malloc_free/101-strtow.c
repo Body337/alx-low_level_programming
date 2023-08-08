@@ -20,7 +20,7 @@ char **strtow(char *str)
 
 	len = str_len(str);
 	n = number_of_words(len, str);
-	a = malloc(sizeof(char *) * n);
+	a = malloc(sizeof(char *) * (n + 1));
 
 	if (a == NULL)
 	{
@@ -38,7 +38,7 @@ char **strtow(char *str)
 			for (; str[i] != ' ' && str[i] != '\0'; i++)
 				x++;
 
-			a[j] = malloc((sizeof(char) * x) + 1);
+			a[j] = malloc(sizeof(char) * (x + 1));
 
 			if (a[j] == NULL)
 			{
