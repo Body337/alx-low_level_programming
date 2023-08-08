@@ -28,14 +28,14 @@ char **strtow(char *str)
 		free(a);
 	}
 
-	for (; i < len && j < n;)
+	for (; str[i] != '\0' && j < n;)
 	{
 		if (str[i] == ' ')
 			i++;
 		else
 		{
 			z = i;
-			for (; str[i] != ' '; i++)
+			for (; str[i] != ' ' && str[i] != '\0'; i++)
 				x++;
 
 			a[j] = malloc((sizeof(char) * x) + 1);
@@ -96,7 +96,7 @@ int number_of_words(int x, char *str)
  */
 int str_len(char *str)
 {
-	int n;
+	int n = 0;
 
 	while (*str != '\0')
 	{
@@ -114,7 +114,7 @@ int str_len(char *str)
  */
 void freeall(char **ar, int x)
 {
-	for (; x > 0;--x)
+	for (; x > 0; --x)
 		free(ar[x]);
 	free(ar);
 }
