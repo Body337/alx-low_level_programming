@@ -1,15 +1,17 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+
+int number_of_words(int x, char *str);
+int str_len(char *str);
+void freeall(char **ar, int x);
+
 /**
  * strtow - split strings into words
  * @str: an array of a string
  *
  * Return: a pointer to the new string array of words
  */
-int number_of_words(int x, char *str);
-int str_len(char *str);
-void freeall(char **ar, int x);
 char **strtow(char *str)
 {
 	int n, len, i = 0, j = 0, z = 0, x = 0, c = 0;
@@ -22,7 +24,7 @@ char **strtow(char *str)
 	n = number_of_words(len, str);
 	a = malloc(sizeof(char *) * (n + 1));
 
-	if (a == NULL)
+	if (n == NULL)
 	{
 		return (NULL);
 		free(a);
