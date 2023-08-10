@@ -25,7 +25,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	sl1 = strl(s1);
 	sl2 = strl(s2);
-	arr = malloc(sizeof(char) * (sl1 + sl2 + 1));
+	if (n >= sl2)
+		arr = malloc(sizeof(char) * (sl1 + sl2 + 1));
+	else
+		arr = malloc(sizeof(char) * (sl1 + n + 1));
 	
 	if (arr == NULL)
 	{
