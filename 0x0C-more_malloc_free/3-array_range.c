@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
  * array_range - make an array from min to max
- * min: the frist member of the array
- * max: the last member of the array
+ * @min: the frist member of the array
+ * @max: the last member of the array
  *
  * Return: pointer ti the array
  */
