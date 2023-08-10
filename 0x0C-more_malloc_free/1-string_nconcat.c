@@ -25,7 +25,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	sl1 = strl(s1);
 	sl2 = strl(s2);
-	arr = malloc(sizeof(*arr) * (sl1 + sl2 + 1));
+	arr = malloc(sizeof(char) * (sl1 + sl2 + 1));
 	
 	if (arr == NULL)
 	{
@@ -44,8 +44,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		z++;
 		x++;
 	}
-
-	x++;
 	arr[x] = '\0';
 
 	return (arr);
