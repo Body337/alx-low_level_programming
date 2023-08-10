@@ -15,7 +15,7 @@ void *_calloc(unsigned int nmeb, unsigned int size)
 	if (nmeb == 0 || size == 0)
 		return (NULL);
 
-	arr = malloc(size * nmeb);
+	arr = malloc(sizeof(char) * (size * nmeb));
 
 	if (arr == NULL)
 		return (NULL);
