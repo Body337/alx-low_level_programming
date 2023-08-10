@@ -15,14 +15,16 @@ void *_calloc(unsigned int nmeb, unsigned int size)
 	if (nmeb == 0 || size == 0)
 		return (NULL);
 
-	arr = malloc(sizeof(char) * (size * nmeb));
+	x = size * nmeb;
+	arr = malloc(x);
 
 	if (arr == NULL)
 		return (NULL);
 
-	for (x = 0; x < size; x++)
+	for (x = 0; x < (size * nmeb); x++)
 	{
 		arr[x] = 0;
 	}
+
 	return (arr);
 }
