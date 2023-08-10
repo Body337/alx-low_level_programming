@@ -56,7 +56,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
  */
 int strl(char *s)
 {
-	int z;
+	int z = 0;
 
 	while (*s != '\0')
 	{
