@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-int strl(char *s);
+unsigned int strl(char *s);
 /**
  * string_nconcat - add the frist n bytes of s2 to s1
  * @s1: the frist string
@@ -54,9 +54,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
  *
  * Return: length of the string
  */
-int strl(char *s)
+unsigned int strl(char *s)
 {
-	int z = 0;
+	unsigned int z = 0;
 
 	while (*s != '\0')
 	{
