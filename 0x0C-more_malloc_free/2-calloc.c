@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * _calloc - works the same as calloc
- * @nmemb: an array of elements
+ * @nmeb: an array of elements
  * @size: size of the array
  *
  * Return: pointer to the allocated memory
