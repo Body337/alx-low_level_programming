@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-unsigned int strl(char *s);
 /**
  * string_nconcat - add the frist n bytes of s2 to s1
  * @s1: the frist string
@@ -11,7 +10,7 @@ unsigned int strl(char *s);
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int sl1, sl2, z = 0, x = 0;
+	unsigned int sl1 = 0, sl2 = 0, z = 0, x = 0;
 	char *arr;
 	
 	if (s2 == NULL)
@@ -22,9 +21,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s1 = "";
 	}
+	while (s1[sl1])
+		sl1++;
+	while (s2[sl2])
+		sl2++;
 
-	sl1 = strl(s1);
-	sl2 = strl(s2);
 	if (n >= sl2)
 		arr = malloc(sizeof(char) * (sl1 + sl2 + 1));
 	else
@@ -50,21 +51,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	arr[x] = '\0';
 
 	return (arr);
-}
-/**
- * strl - return the string length
- * @s: the string
- *
- * Return: length of the string
- */
-unsigned int strl(char *s)
-{
-	unsigned int z = 0;
-
-	while (*s != '\0')
-	{
-		z++;
-		s++;
-	}
-	return (z);
 }
