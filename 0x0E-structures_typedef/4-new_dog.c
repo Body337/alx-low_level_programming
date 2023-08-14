@@ -17,10 +17,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *dog;
 	int namel = 0, ownerl = 0;
 
-	if (name != NULL && owner != NULL)
+	if (name == NULL)
 	{
-		namel = _strlen(name);
-		ownerl = _strlen(owner);
+		namel = _strlen(name)i + 1;
+		ownerl = _strlen(owner) + 1;
 		dog = malloc(sizeof(dog_t));
 
 		if (dog == NULL)
