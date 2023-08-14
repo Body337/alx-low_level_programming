@@ -17,7 +17,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *dog;
 	int namel = 0, ownerl = 0;
 
-	if (name == NULL)
+	if (name != NULL && owner != NULL)
 	{
 		namel = _strlen(name) + 1;
 		ownerl = _strlen(owner) + 1;
