@@ -3,7 +3,7 @@
 #include <string.h>
 /**
   * get_op_func - gets the function
-  * @s: a char 
+  * @s: a char
   *
   * Return: a function
   */
@@ -21,7 +21,7 @@ int (*get_op_func(char *s))(int, int)
 
 	while (i < 5)
 	{
-		if(strcmp(s, ops[i].op) == 0)
+		if (strcmp(s, ops[i].op) == 0)
 			return (ops[i].f);
 		i++;
 	}
