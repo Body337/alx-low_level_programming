@@ -53,7 +53,7 @@ void print_c(va_list ap)
 	printf("%c", va_arg(ap, int));
 }
 /**
- * print_c - prints char
+ * print_i - prints char
  * @ap: something to be printed
  *
  * Return: nothing
@@ -63,7 +63,7 @@ void print_i(va_list ap)
 	printf("%d", va_arg(ap, int));
 }
 /**
- * print_c - prints char
+ * print_f - prints char
  * @ap: something to be printed
  *
  * Return: nothing
@@ -73,7 +73,7 @@ void print_f(va_list ap)
 	printf("%f", va_arg(ap, double));
 }
 /**
- * print_c - prints char
+ * print_s - prints char
  * @ap: something to be printed
  *
  * Return: nothing
