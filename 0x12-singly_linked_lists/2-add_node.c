@@ -2,15 +2,21 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * _strlen - len of string
+ * @s: string
+ * Return: len of string
+ */
 int _strlen(const char *s)
 {
 	int i = 0;
+
 	while (s[i])
 		i++;
-	return(i);
+	return (i);
 }
 /**
- * add-node - adds a node
+ * add_node - adds a node
  * @head: pointer to a list
  * @str: string
  * Return: pointer to new list
