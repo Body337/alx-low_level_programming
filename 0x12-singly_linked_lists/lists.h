@@ -1,5 +1,5 @@
 #ifndef __HEAD__
-#define __HEAD_
+#define __HEAD__
 #include <stdlib.h>
 /**
  * struct list_s - singly linked list
