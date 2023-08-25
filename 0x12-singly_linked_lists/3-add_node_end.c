@@ -15,10 +15,12 @@ int _strlen(const char *s)
 	while (s[i])
 		i++;
 	return (i);
-}/**
+}
+/**
  * add_node_end - add node at the end of a list
  * @head: list
  * @str: string
+ *
  * Return: 0 on success
  */
 list_t *add_node_end(list_t **head, const char *str)
