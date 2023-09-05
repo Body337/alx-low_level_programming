@@ -30,7 +30,7 @@ void copy(const char *from, const char *to)
 {
 	ssize_t readed;
 	int to_fd, from_fd;
-	char *from_str[BUFFER];
+	char *from_str[1024];
 
 	from_fd = open(from, O_RDONLY);
 	if (from_fd == -1)
