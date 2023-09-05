@@ -1,4 +1,5 @@
 #include "main.h"
+int _strlen(char *s);
 /**
  * create_file - creates a file
  * @filename: the file to be created
@@ -10,14 +11,14 @@ int create_file(const char *filename, char *text_content)
 {
 	int fd;
 
-	fd = open(filename, O_RDWR | O_CREATE | O_TRUNC, S_IRUSR | O_IWUSR);
+	fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
 
 	if (fd == -1)
 		return (-1);
 
 	if (text_content != NULL)
 		write(fd, text_content, _strlen(text_content));
-	return (0);
+	return (1);
 }
 /**
   * _strlen - Returns the length of a string
