@@ -30,7 +30,7 @@ void copy(const char *from, const char *to)
 {
 	ssize_t readed;
 	int to_fd, from_fd;
-	char *from_str[1024];
+	char *from_str[BUFFER];
 
 	from_fd = open(from, O_RDONLY);
 	if (from_fd == -1)
@@ -38,10 +38,10 @@ void copy(const char *from, const char *to)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", from);
 		exit(98);
 	}
-	to_fd = open(to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	to_fd = open(to, O_WRONLY | O_CREAT | O_TRUNC, 0665);
 	if (to_fd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s/n", to);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", to);
 		exit(99);
 	}
 	while ((readed = read(from_fd, from_str, BUFFER)) > 0)
